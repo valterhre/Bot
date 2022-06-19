@@ -85,11 +85,11 @@ def handle_text(message):
     print(message.id)
     q.append(message.text)
     print(q)
-    li=['бля',"пизд","ёб","еб",'хуй', "сука", "дебил"]
+    li=['блин',"дурак", "ололо"]
     for x in li:
         print("ooo",((message.text).lower().startswith(x)))
         if (message.text).lower().startswith(x):
-            bot.reply_to(message, 'не матерись, дебил')
+            bot.reply_to(message, 'не матерись')
             bot.delete_message(message.chat.id, message_id=message.id)
 
 bot.polling(none_stop=True, interval=0)
